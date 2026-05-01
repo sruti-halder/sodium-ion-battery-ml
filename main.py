@@ -41,8 +41,8 @@ def main():
     
     print("Cleaning dataset")
 
-    raw_data = "data/na_battery_dataset.csv"
-    clean_data = "data/na_battery_cleaned_dataset.csv"
+    raw_data = "data/raw/na_battery_dataset.csv"
+    clean_data = "data/processed/cleaned_na_battery_dataset.csv"
 
     clean_dataset(raw_data, clean_data)
 
