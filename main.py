@@ -45,9 +45,6 @@ def main():
     clean_data = "data/processed/cleaned_na_battery_dataset.csv"
 
     clean_dataset(raw_data, clean_data)
-
-
-    # BASIC ANALYSIS + PLOTS
   
     print("Data analysis")
 
@@ -74,18 +71,12 @@ def main():
         "data/processed/structural.csv",
         api_key="YOUR_API_KEY"   
     )
-
-
-    # LOAD FEATURE DATA
     
     print("Loading feature datasets")
 
     df_magpie = pd.read_csv("data/processed/magpie.csv")
     df_domain = pd.read_csv("data/processed/domain.csv")
     df_struct = pd.read_csv("data/processed/structural.csv")
-
-
-    # CREATE HYBRID DATASET
     
     print("Creating hybrid dataset")
 
@@ -128,7 +119,6 @@ def main():
         X.columns,
         "data/raw/joshi.csv"
     )
-
 
     # SCREENING
    
